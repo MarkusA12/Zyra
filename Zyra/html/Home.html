@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Zyra</title>
+        <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                margin: 0;
+                background-color: #000;
+            }
+            #main {
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity: 80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large"
+            onclick="w3_close()">Close &times;</button>
+            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+        </div>
+        
+        <div id="main">
+            <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+                <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+                <div class="w3-container">
+                    <a href="Home.html" style="text-decoration: none; color: inherit;">
+                    <h1><strong>Zyra</strong></h1>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="navbar-scroll-wrapper">
+                <div class="w3-bar w3-black">
+                    <a href="Home.html" class="w3-bar-item w3-button w3-purple">Home</a>
+                    <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a>
+                    <a href="login.html" class="w3-bar-item w3-button w3-right" id="loginNav">Login/Signup</a>
+                    <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span>
+                    <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Category</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+                            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+                            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+                            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="checkout.html" class="w3-bar-item w3-button w3-right w3-black" style="margin-top: 10px;">
+                <i class="fa fa-shopping-cart"> </i>  Cart (<span id="cartCount">0</span>)
+            </a>
+
+            <!-- Main content container -->
+            <div class="w3-container">
+                <!-- Create a row for the cards -->
+                <a href="Specter.html" style="text-decoration: none; color: inherit;">
+                <div class="w3-row">
+                    <!-- First card -->
+                    <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                        <div class="w3-display-container w3-text-white">
+                            <img src="../Bilder/Specter.png" alt="Lights" style="width:100%">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third w3-center">
+                                <h3><strong>Specter</strong></h3>
+                            </div>
+                            <div class="w3-third w3-right">
+                                <h3>49.99$</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Second card -->
+                <a href="nightwatch.html" style="text-decoration: none; color: inherit;">
+                <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                    <div class="w3-display-container w3-text-white">
+                        <img src="../Bilder/Nightwatch.png" alt="Lights" style="width:100%">
+                        <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-third w3-center">
+                            <h3><strong>Nightwatch</strong></h3>
+                        </div>
+                        <div class="w3-third w3-right">
+                            <h3>49.99$</h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Third card -->
+                <a href="ZeroRecoon.html" style="text-decoration: none; color: inherit;">
+                <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                    <div class="w3-display-container w3-text-white">
+                        <img src="../Bilder/Zero Recon.png" alt="Lights" style="width:100%">
+                        <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-third w3-center">
+                            <h3><strong>Zero Recon</strong></h3>
+                        </div>
+                        <div class="w3-third w3-right">
+                            <h3>29.99$</h3>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </a>
+                <div class="w3-container w3-center w3-padding-16 w3-asphalt" style="text-align: center; background-color: rgba(0, 0, 0, 0.5) !important;">
+                    <div style="position: relative; text-align: center;">
+                        <!-- Centering the Best Seller text and anim at the top -->
+                        <div class="w3-text-white w3-xxlarge w3-margin-top"><strong>Best Seller</strong></div>
+                        <img src="../Videor/Animation - 1746892014269.gif" alt="Best Seller"
+                            style="position: absolute; top: -70px; left: 50%; transform: translateX(-50%); width: 80px; pointer-events: none; z-index: 2;">
+                    </div>
+                    <!-- Centering the card vertically and horizontally -->
+                    <a href="Ironblood.html" style="text-decoration: none; color: inherit;">
+                    <div class="w3-card-4" style="width: 200px; margin: 0 auto;">
+                        <div class="w3-display-container w3-text-white">
+                            <img src="../Bilder/Monsterrpg.png" alt="Lights" style="width:100%">
+                        </div>
+                        <div class="w3-row w3-white">
+                            <div class="w3-third w3-center">
+                                <h3><strong>Ironblood Siege</strong></h3>
+                            </div>
+                            <div class="w3-third w3-right">
+                                <h3>39.99$</h3>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <a href="Bladesong.html" style="text-decoration: none; color: inherit;">
+                <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                    <div class="w3-display-container w3-text-white">
+                        <img src="../Bilder/RPG.png" alt="Lights" style="width:100%">
+                        <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-third w3-center">
+                            <h3><strong>Bladesong Chronicles</strong></h3>
+                        </div>
+                        <div class="w3-third w3-right">
+                            <h3>39.99$</h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="Ironblood.html" style="text-decoration: none; color: inherit;">
+                <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                    <div class="w3-display-container w3-text-white">
+                        <img src="../Bilder/Monsterrpg.png" alt="Lights" style="width:100%">
+                        <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-third w3-center">
+                            <h3><strong>Ironblood Siege</strong></h3>
+                        </div>
+                        <div class="w3-third w3-right">
+                            <h3>39.99$</h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="Counter-terrorism.html" style="text-decoration: none; color: inherit;">
+                    <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                        <div class="w3-display-container w3-text-white">
+                            <img src="../Bilder/Counter-terrorism.png" alt="Lights" style="width:100%">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third w3-center">
+                                <h3><strong>Counter-Terrorism</strong></h3>
+                            </div>
+                            <div class="w3-third w3-right">
+                                <h3>39.99$</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div> <!-- Close w3-container -->
+        </div> <!-- Close #main -->
+
+        <footer class="w3-container w3-black w3-padding-16 w3-center">
+            <p>&copy; 2025 Zyra. All rights reserved.</p>
+            <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a>
+            <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a>
+            <a href="Contact.html" class="w3-button w3-small">Contact us</a>
+            <a href="About.html" class="w3-button w3-small">About us</a>
+            <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+        </footer>
+
+        <script>
+            function w3_open() {
+                document.getElementById("main").style.marginLeft = "25%";
+                document.getElementById("mySidebar").style.width = "25%";
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("openNav").style.display = 'none';
+            }
+            function w3_close() {
+                document.getElementById("main").style.marginLeft = "0%";
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("openNav").style.display = "inline-block";
+            }
+        </script>
+        <script src="../js/login.js"></script>
+        <script src="../js/cart.js"></script>
+    </body>
+</html>

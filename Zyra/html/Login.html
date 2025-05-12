@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Zyra</title>
+    <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="../css/style-login.css"> <!-- Custom login page CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- W3CSS for layout -->
+</head>
+
+<body>
+    <!-- Navbar with navigation links -->
+    <div class="navbar-scroll-wrapper">
+        <div class="w3-bar w3-black">
+            <a href="Home.html" class="w3-bar-item w3-button">Home</a> <!-- Home link -->
+            <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a> <!-- FAQ link -->
+            <a href="login.html" class="w3-bar-item w3-button w3-right w3-purple" id="loginNav">Login/Signup</a> <!-- Login/Signup link -->
+            <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span> <!-- Username display -->
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Category</button> <!-- Category dropdown button -->
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a> <!-- FPS Category -->
+                    <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a> <!-- Action Category -->
+                    <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a> <!-- Horror Category -->
+                    <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a> <!-- RPG Category -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Login form section -->
+    <div class="body_outside">
+        <div class="login-box">
+            <div class="login-header">
+                <header>Login</header> <!-- Login header -->
+            </div>
+            
+            <!-- Email input field -->
+            <div class="input-box">
+                <input type="text" id="email" class="input-field" placeholder="Email" autocomplete="on" required> <!-- Email input -->
+            </div>
+            
+            <!-- Password input field -->
+            <div class="input-box">
+                <input type="password" id="password" class="input-field" placeholder="Password" autocomplete="off" required> <!-- Password input -->
+            </div>
+            
+            <!-- Login button -->
+            <div>
+                <button style="color:white;" class="submit-btn" id="submit">Login</button> <!-- Login button -->
+            </div>
+            
+            <!-- Sign up link -->
+            <div class="sign-up-link">
+                <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p> <!-- Sign up link -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer section -->
+    <footer class="w3-container w3-black w3-padding-16 w3-center">
+        <p>&copy; 2025 Zyra. All rights reserved.</p> <!-- Footer text -->
+        <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a> <!-- Home link -->
+        <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a> <!-- FAQ link -->
+        <a href="Contact.html" class="w3-button w3-small">Contact us</a> <!-- Contact link -->
+        <a href="About.html" class="w3-button w3-small">About us</a> <!-- About link -->
+        <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+    </footer>
+
+    <!-- External JS file for login functionality -->
+    <script src="../js/login.js"></script> <!-- Login JS -->
+</body>
+</html>

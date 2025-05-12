@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us - Zyra</title>
+        <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon"> <!-- Favicon link -->
+        <link rel="stylesheet" href="../css/style.css"> <!-- Custom CSS link -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- FontAwesome for icons -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- W3CSS for layout styling -->
+    </head>
+    <body>
+        <!-- Sidebar menu -->
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity: 80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+        </div>
+
+        <!-- Main content -->
+        <div id="main">
+            <!-- Top navigation bar -->
+            <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+                <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+                <div class="w3-container">
+                    <a href="Home.html" style="text-decoration: none; color: inherit;">
+                        <h1><strong>Zyra</strong></h1> <!-- Site title -->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation bar for links -->
+            <div class="navbar-scroll-wrapper">
+                <div class="w3-bar w3-black">
+                    <a href="Home.html" class="w3-bar-item w3-button w3-purple">Home</a>
+                    <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a>
+                    <a href="login.html" class="w3-bar-item w3-button w3-right" id="loginNav">Login/Signup</a>
+                    <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span>
+                    <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a>
+                    <!-- Category dropdown menu -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Category</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+                            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+                            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+                            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact page content -->
+            <div class="w3-container w3-padding-32">
+                <h2>Contact Us</h2> <!-- Heading for the contact page -->
+                <p>If you have any questions, feedback, or need assistance, feel free to reach out to us through the form below or by using our contact details.</p> <!-- Instructions -->
+
+                <!-- Two-column layout for contact form and location -->
+                <div class="w3-row-padding">
+                    <!-- Contact form -->
+                    <div class="w3-half">
+                        <h3>Contact Form</h3>
+                        <form action="#" method="POST">
+                            <label for="name">Full Name</label>
+                            <input class="w3-input w3-border" type="text" id="name" name="name" required> <!-- Name input -->
+
+                            <label for="email">Email</label>
+                            <input class="w3-input w3-border" type="email" id="email" name="email" required> <!-- Email input -->
+
+                            <label for="message">Message</label>
+                            <textarea class="w3-input w3-border" id="message" name="message" rows="5" required></textarea> <!-- Message input -->
+
+                            <button type="submit" class="w3-button w3-black w3-margin-top">Send Message</button> <!-- Submit button -->
+                        </form>
+                    </div>
+
+                    <!-- Company location and contact details -->
+                    <div class="w3-half">
+                        <h3>Our Location</h3>
+                        <p>We are located at:</p>
+                        <p><strong>Zyra Gaming</strong><br>
+                        1234 Gaming Street<br>
+                        Cityville, GV 12345<br>
+                        Country</p>
+
+                        <p><strong>Phone:</strong> +1 (234) 567-890</p>
+                        <p><strong>Email:</strong> support@zyra.com</p>
+
+                        <h3>Follow Us</h3>
+                        <!-- Social media links -->
+                        <a href="#" class="w3-button w3-blue w3-xlarge w3-margin-right"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="w3-button w3-light-blue w3-xlarge w3-margin-right"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="w3-button w3-pink w3-xlarge"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer with navigation links -->
+            <footer class="w3-container w3-black w3-center w3-padding-16">
+                <p>&copy; 2025 Zyra. All rights reserved.</p>
+                <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a>
+                <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a>
+                <a href="Contact.html" class="w3-button w3-small">Contact us</a>
+                <a href="About.html" class="w3-button w3-small">About us</a>
+                <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+            </footer>
+        </div>
+
+        <!-- Sidebar open/close script -->
+        <script>
+            function w3_open() {
+                document.getElementById("main").style.marginLeft = "25%"; // Shift main content for sidebar
+                document.getElementById("mySidebar").style.width = "25%"; // Set sidebar width
+                document.getElementById("mySidebar").style.display = "block"; // Show sidebar
+                document.getElementById("openNav").style.display = 'none'; // Hide menu button
+            }
+            function w3_close() {
+                document.getElementById("main").style.marginLeft = "0%"; // Reset main content position
+                document.getElementById("mySidebar").style.display = "none"; // Hide sidebar
+                document.getElementById("openNav").style.display = "inline-block"; // Show menu button again
+            }
+        </script>
+
+        <!-- External JS for login and cart functionality -->
+        <script src="../js/login.js"></script>
+        <script src="../js/cart.js"></script>
+    </body>
+</html>

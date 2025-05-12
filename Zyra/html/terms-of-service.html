@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ToS - Zyra</title> <!-- Page title -->
+    <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- W3.CSS framework -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Custom CSS -->
+</head>
+<body>
+    <!-- Sidebar menu -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity: 80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button> <!-- Close button -->
+        <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a> <!-- Category link -->
+        <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a> <!-- Category link -->
+        <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a> <!-- Category link -->
+        <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a> <!-- Category link -->
+    </div>
+
+    <div id="main">
+        <!-- Header with menu toggle -->
+        <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+            <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button> <!-- Menu button -->
+            <div class="w3-container">
+                <a href="Home.html" style="text-decoration: none; color: inherit;">
+                <h1><strong>Zyra</strong></h1> <!-- Logo -->
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="w3-bar w3-black">
+            <a href="Home.html" class="w3-bar-item w3-button">Home</a> <!-- Home link -->
+            <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a> <!-- FAQ link -->
+            <a href="login.html" class="w3-bar-item w3-button w3-right w3-purple" id="loginNav">Login/Signup</a> <!-- Login link -->
+            <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span> <!-- User display (hidden) -->
+            <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a> <!-- Logout link -->
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Category</button> <!-- Category dropdown -->
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a> <!-- Category link -->
+                    <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a> <!-- Category link -->
+                    <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a> <!-- Category link -->
+                    <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a> <!-- Category link -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms of Service content -->
+        <div class="w3-container w3-padding-32">
+            <div class="w3-card-4 w3-white w3-padding-32" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="w3-center w3-text-dark-grey">Terms of Service</h2>
+        
+                <!-- Section 1 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">1. Acceptance of Terms</h4>
+                    <p>By using Zyra’s services, you agree to these terms. If you do not agree, please refrain from using our site or services.</p>
+                </div>
+        
+                <!-- Section 2 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">2. User Obligations</h4>
+                    <p>You agree to use the website lawfully and responsibly. Misuse or harmful behavior may result in account termination.</p>
+                </div>
+        
+                <!-- Section 3 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">3. Privacy and Data Protection</h4>
+                    <p>Zyra collects user data solely for account creation and order processing. We respect your privacy and <strong>will never sell your data</strong> to third parties. Your information is kept secure and only shared when legally required.</p>
+                </div>
+        
+                <!-- Section 4 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">4. Account Security</h4>
+                    <p>You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.</p>
+                </div>
+        
+                <!-- Section 5 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">5. Termination of Account</h4>
+                    <p>Zyra reserves the right to suspend or terminate your account at any time for violations of these terms or unlawful behavior.</p>
+                </div>
+        
+                <!-- Section 6 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">6. Limitation of Liability</h4>
+                    <p>Zyra is not liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our services.</p>
+                </div>
+        
+                <!-- Section 7 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">7. Governing Law</h4>
+                    <p>These terms are governed by the laws of Sweden. Any disputes will be resolved under Swedish jurisdiction.</p>
+                </div>
+        
+                <!-- Section 8 -->
+                <div class="w3-margin-bottom">
+                    <h4 class="w3-text-dark-grey">8. Changes to Terms</h4>
+                    <p>Zyra may update these terms at any time. Continued use of the site after changes implies acceptance of the new terms.</p>
+                </div>
+            </div>
+        </div>
+        
+                <!-- Button to sign-up page -->
+                <div class="w3-center">
+                    <a href="sign-up.html" class="w3-button w3-black w3-large">Back to Sign Up</a> <!-- Sign-up button -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-black w3-padding-16 w3-center">
+        <p>&copy; 2025 Zyra. All rights reserved.</p> <!-- Footer text -->
+        <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a> <!-- Home link -->
+        <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a> <!-- FAQ link -->
+        <a href="Contact.html" class="w3-button w3-small">Contact us</a> <!-- Contact link -->
+        <a href="About.html" class="w3-button w3-small">About us</a> <!-- About link -->
+        <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+    </footer>
+
+    <!-- Sidebar open/close functions -->
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

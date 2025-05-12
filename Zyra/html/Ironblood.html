@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ironblood - Zyra</title>
+        <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- W3CSS for layout -->
+        <link rel="stylesheet" href="../css/style.css"> <!-- Custom CSS -->
+    </head>
+    <body>
+        <!-- Sidebar for navigation -->
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity: 80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button> <!-- Close sidebar -->
+            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a> <!-- FPS Category -->
+            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a> <!-- Action Category -->
+            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a> <!-- Horror Category -->
+            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a> <!-- RPG Category -->
+        </div>
+        
+        <div id="main">
+            <!-- Top bar with open sidebar button -->
+            <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+                <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button> <!-- Open sidebar button -->
+                <div class="w3-container">
+                    <a href="Home.html" style="text-decoration: none; color: inherit;">
+                        <h1><strong>Zyra</strong></h1> <!-- Website title -->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation bar -->
+            <div class="navbar-scroll-wrapper">
+                <div class="w3-bar w3-black">
+                    <a href="Home.html" class="w3-bar-item w3-button">Home</a> <!-- Home link -->
+                    <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a> <!-- FAQ link -->
+                    <a href="login.html" class="w3-bar-item w3-button w3-right" id="loginNav">Login/Signup</a> <!-- Login/Signup link -->
+                    <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span> <!-- Username display -->
+                    <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a> <!-- Logout link -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Category</button> <!-- Category dropdown button -->
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a> <!-- FPS Category -->
+                            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a> <!-- Action Category -->
+                            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a> <!-- Horror Category -->
+                            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a> <!-- RPG Category -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shopping cart icon -->
+            <a href="checkout.html" class="w3-bar-item w3-button w3-right w3-black" style="margin-top: 10px;">
+                <i class="fa fa-shopping-cart"> </i>  Cart (<span id="cartCount">0</span>) <!-- Cart link -->
+            </a>
+
+            <!-- Game title and description section -->
+            <div class="w3-container" style="padding-top: 120px;">
+                <h1 class="w3-xxlarge w3-bold">Ironblood Siege</h1> <!-- Game title -->
+                
+                <div class="w3-row-padding w3-margin-top">
+                    <!-- Game image -->
+                    <div class="w3-col l4 s12 w3-center">
+                        <img src="../Bilder/Monsterrpg.png" alt="Ironblood Siege" class="w3-image" style="max-width: 80%; height: auto;">
+                    </div>
+        
+                    <!-- Game description and add to cart button -->
+                    <div class="w3-col l7 m12 s12 w3-padding-large">
+                        <button onclick="addToCart({ name: 'Ironblood', price: 39.99 })" class="w3-button w3-round-xxlarge w3-black w3-margin-top">
+                            <strong>$39.99 | Add to Cart</strong> <!-- Add to Cart button -->
+                        </button>
+        
+                        <h2 class="w3-margin-top w3-bold">Description</h2>
+                        <p class="w3-small" style="text-align: justify;">
+                            Ironblood Siege is a dark fantasy tactical RPG set in a brutal world where kingdoms fall not to monsters, but to men twisted by war, greed, and forbidden alchemy. As commander of the Ironblood Legion—a cursed battalion of elite soldiers—you are tasked with breaking a siege that threatens to consume the last free city of the realm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h1 class="w3-xxlarge w3-bold w3-margin-left">Similar Game</h1>
+            <div class="w3-row-padding" style="width: 100%;">
+            <a href="Bladesong.html" style="text-decoration: none; color: inherit;">
+                <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                    <div class="w3-display-container w3-text-white">
+                        <img src="../Bilder/RPG.png" alt="Lights" style="width:100%">
+                        <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-third w3-center">
+                            <h3><strong>Bladesong Chronicles</strong></h3>
+                        </div>
+                        <div class="w3-third w3-right">
+                            <h3>39.99$</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="w3-container w3-black w3-padding-16 w3-center">
+            <p>&copy; 2025 Zyra. All rights reserved.</p> <!-- Footer text -->
+            <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a> <!-- Home link -->
+            <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a> <!-- FAQ link -->
+            <a href="Contact.html" class="w3-button w3-small">Contact us</a> <!-- Contact link -->
+            <a href="About.html" class="w3-button w3-small">About us</a> <!-- About link -->
+            <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+        </footer>
+
+        <!-- Sidebar open/close script -->
+        <script>
+            function w3_open() {
+                document.getElementById("main").style.marginLeft = "25%"; // Open sidebar
+                document.getElementById("mySidebar").style.width = "25%";
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("openNav").style.display = 'none'; // Hide button
+            }
+            function w3_close() {
+                document.getElementById("main").style.marginLeft = "0%"; // Close sidebar
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("openNav").style.display = "inline-block"; // Show button
+            }
+        </script>
+
+        <!-- External JS files -->
+        <script src="../js/login.js"></script> <!-- Login functionality -->
+        <script src="../js/cart.js"></script> <!-- Cart functionality -->
+    </body>
+</html>

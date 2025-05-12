@@ -1,0 +1,23 @@
+body { /*/ Den här stylen är för bakgrunden och font och färg på text*/
+    background-image: url('../Bilder/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+/* Only allow horizontal scroll on small screens */
+@media screen and (max-width: 768px) {
+  .navbar-scroll-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .navbar-scroll-wrapper .w3-bar {
+    width: max-content;
+  }
+
+  .w3-bar-item {
+    display: inline-block; /* ensures buttons stay in line */
+  }
+}

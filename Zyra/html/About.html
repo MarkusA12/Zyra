@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - Zyra</title>
+    <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity:80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+        <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+        <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+        <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+        <!-- Top bar -->
+        <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+            <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <a href="Home.html" style="text-decoration: none; color: inherit;">
+                    <h1><strong>Zyra</strong></h1>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="navbar-scroll-wrapper">
+            <div class="w3-bar w3-black">
+                <a href="Home.html" class="w3-bar-item w3-button w3-purple">Home</a>
+                <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a>
+                <a href="login.html" class="w3-bar-item w3-button w3-right" id="loginNav">Login/Signup</a>
+                <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span>
+                <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Category</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+                        <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+                        <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+                        <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div class="w3-container w3-padding-32">
+            <h2>About Us</h2>
+            <p>Welcome to Zyra, your go-to platform for discovering and purchasing the latest and greatest in gaming experiences. At Zyra, we believe in bringing gamers together by providing a wide selection of games that suit all tastes and preferences. Whether you’re a fan of fast-paced FPS, thrilling horror, or engaging RPGs, we have something for you!</p>
+            
+            <p>Our mission is to make gaming more accessible and enjoyable for everyone. We aim to provide the best user experience, ensuring that our platform is easy to navigate and that our customers can find exactly what they’re looking for. We value our community and are constantly working to improve and expand our offerings to meet your gaming needs.</p>
+            
+            <h3>Our Team</h3>
+            <p>Our team is made up of passionate gamers, developers, and designers who are dedicated to creating a top-notch gaming experience. With years of experience in the gaming industry, we strive to keep up with the latest trends and bring you only the best games and offers.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-black w3-center w3-padding-16">
+            <p>&copy; 2025 Zyra. All rights reserved.</p>
+            <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a>
+            <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a>
+            <a href="Contact.html" class="w3-button w3-small">Contact us</a>
+            <a href="About.html" class="w3-button w3-small">About us</a>
+            <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+    <script src="../js/login.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    overflow-y: hidden;
+}
+
+
+.body_outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-header header{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-box .input-field{
+    width: 75%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow:0px 5px 10px 1px rgba(0,0,0,0.05);
+    outline: none;
+    transition: .3s;
+}
+
+.input-field:focus{
+    transform: scale(1.05,1);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.submit-btn {
+    width: 50%;
+    height: 60px;
+    background: #222;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.submit-btn:hover{
+    background: #000;
+    transform: scale(1.05,1);
+}
+.sign-up-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.sign-up-link a{
+    color: #000;
+    font-weight: 600;
+}
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked {
+    background-color: #222;
+    border-color: #222;
+}
+
+.checkbox-wrapper input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    top: 2px;
+    left: 6px;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::after {
+    opacity: 1;
+}

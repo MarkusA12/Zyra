@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FAQ - Zyra</title>
+        <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity: 80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+        </div>
+
+        <div id="main">
+            <!-- Navigation Bar -->
+            <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+                <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+                <div class="w3-container">
+                    <a href="Home.html" style="text-decoration: none; color: inherit;">
+                        <h1><strong>Zyra</strong></h1>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Navbar -->
+            <div class="navbar-scroll-wrapper">
+                <div class="w3-bar w3-black">
+                    <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="FAQ.html" class="w3-bar-item w3-button w3-purple">FAQ</a>
+                    <a href="login.html" class="w3-bar-item w3-button w3-right" id="loginNav">Login/Signup</a>
+                    <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span>
+                    <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Category</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+                            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+                            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+                            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Icon -->
+            <a href="checkout.html" class="w3-bar-item w3-button w3-right w3-black" style="margin-top: 10px;">
+                <i class="fa fa-shopping-cart"> </i> Cart (<span id="cartCount">0</span>)
+            </a>
+
+            <!-- FAQ Content -->
+            <div class="w3-container" style="text-align: center;">
+                <h1 class="w3-xxxlarge w3-bold">Frequently Asked Questions</h1>
+            </div>
+
+            <hr>
+
+            <!-- FAQ Question 1 -->
+            <div class="w3-container" style="margin-left: 100px; margin-top: 50px; text-align: justify;">
+                <h3><strong>What is Zyra?</strong></h3>
+                <p style="max-width: 800px;">Zyra is an online game shop offering a curated selection of digital games across various genres like action, horror, FPS, and RPG. We aim to provide a seamless and secure platform for gamers to explore, purchase, and enjoy their favorite titles.</p>
+            </div>
+
+            <hr>
+            
+            <!-- FAQ Question 2 -->
+            <div class="w3-container" style="margin-left: 100px; margin-top: 50px; text-align: justify;">
+                <h3><strong>Do I need to create an account to shop?</strong></h3>
+                <p style="max-width: 800px;">Yes, a Zyra account is required to make purchases. It allows you to securely store your purchase history, receive game updates, and re-download games when needed.</p>
+            </div>
+
+            <hr>
+
+            <!-- FAQ Question 3 -->
+            <div class="w3-container" style="margin-left: 100px; margin-top: 50px; text-align: justify;">
+                <h3><strong>How do I purchase a game from Zyra?</strong></h3>
+                <p style="max-width: 800px;">
+                    Browse the catalog and click on a game to view details.<br>
+                    Click “Add to Cart” to include it in your shopping basket (Make sure you're logged in).<br>
+                    Go to the checkout page and complete the payment.<br>
+                    Once your payment is processed, you will receive an email with either a download link or an activation key (depending on the game).
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-container w3-black w3-padding-16 w3-center">
+                <p>&copy; 2025 Zyra. All rights reserved.</p>
+                <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a>
+                <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a>
+                <a href="Contact.html" class="w3-button w3-small">Contact us</a>
+                <a href="About.html" class="w3-button w3-small">About us</a>
+                <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+            </footer>
+
+            <!-- Sidebar Open/Close Scripts -->
+            <script>
+                function w3_open() {
+                    document.getElementById("main").style.marginLeft = "25%";
+                    document.getElementById("mySidebar").style.width = "25%";
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("openNav").style.display = 'none';
+                }
+                function w3_close() {
+                    document.getElementById("main").style.marginLeft = "0%";
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("openNav").style.display = "inline-block";
+                }
+            </script>
+
+            <!-- External JS files -->
+            <script src="../js/login.js"></script>
+            <script src="../js/cart.js"></script>
+    </body>
+</html>

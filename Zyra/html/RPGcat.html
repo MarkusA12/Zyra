@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title and Meta Information -->
+        <title>RPG - Zyra</title>
+        <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    </head>
+    <body>
+        <!-- Sidebar with Navigation Links -->
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none; opacity: 80%; background-image: url('../Bilder/bg.jpg');" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+            <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+        </div>
+        
+        <div id="main">
+            <!-- Top Bar with Navigation and Sidebar Toggle -->
+            <div class="w3-asphalt w3-margin-bottom" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+                <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+                <div class="w3-container">
+                    <a href="Home.html" style="text-decoration: none; color: inherit;">
+                        <h1><strong>Zyra</strong></h1>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation Bar with Links -->
+            <div class="navbar-scroll-wrapper">
+                <div class="w3-bar w3-black">
+                    <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a>
+                    <a href="login.html" class="w3-bar-item w3-button w3-right" id="loginNav">Login/Signup</a>
+                    <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span>
+                    <a href="#" id="Logout" class="w3-bar-item w3-button w3-right">Logout</a>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button w3-purple">Category</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+                            <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+                            <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+                            <a href="RPGcat.html" class="w3-bar-item w3-button w3-purple">RPG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shopping Cart Link -->
+            <a href="checkout.html" class="w3-bar-item w3-button w3-right w3-black" style="margin-top: 10px;">
+                <i class="fa fa-shopping-cart"> </i>  Cart (<span id="cartCount">0</span>)
+            </a>
+
+            <!-- Page Title -->
+            <div class="w3-container" style="text-align: center;">
+                <h1 class="w3-xxxlarge w3-bold">Role-playing game (RPG)</h1>
+            </div>
+
+            <hr>
+
+            <!-- Game Listings Section -->
+            <div class="w3-row-padding" style="width: 100%;">
+
+                <!-- Bladesong Game Card -->
+                <a href="Bladesong.html" style="text-decoration: none; color: inherit;">
+                    <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                        <div class="w3-display-container w3-text-white">
+                            <img src="../Bilder/RPG.png" alt="Bladesong" style="width:100%">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third w3-center">
+                                <h3><strong>Bladesong Chronicles</strong></h3>
+                            </div>
+                            <div class="w3-third w3-right">
+                                <h3>39.99$</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Ironblood Game Card -->
+                <a href="Ironblood.html" style="text-decoration: none; color: inherit;">
+                    <div class="w3-card-4 w3-margin w3-col l3 m6 s12">
+                        <div class="w3-display-container w3-text-white">
+                            <img src="../Bilder/Monsterrpg.png" alt="Ironblood" style="width:100%">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-third w3-center">
+                                <h3><strong>Ironblood Siege</strong></h3>
+                            </div>
+                            <div class="w3-third w3-right">
+                                <h3>39.99$</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <footer class="w3-container w3-black w3-padding-16 w3-center">
+                <p>&copy; 2025 Zyra. All rights reserved.</p>
+                <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a>
+                <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a>
+                <a href="Contact.html" class="w3-button w3-small">Contact us</a>
+                <a href="About.html" class="w3-button w3-small">About us</a>
+                <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+            </footer>
+            
+            <!-- Sidebar Open and Close Script -->
+            <script>
+                function w3_open() {
+                    document.getElementById("main").style.marginLeft = "25%";
+                    document.getElementById("mySidebar").style.width = "25%";
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("openNav").style.display = 'none';
+                }
+                function w3_close() {
+                    document.getElementById("main").style.marginLeft = "0%";
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("openNav").style.display = "inline-block";
+                }
+            </script>
+            <!-- JS Files -->
+            <script src="../js/login.js"></script>
+            <script src="../js/cart.js"></script>
+    </body>
+</html>

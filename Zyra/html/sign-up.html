@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page Title and Meta Information -->
+    <title>Sign-up - Zyra</title>
+    <link rel="icon" href="../Bilder/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style-login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar-scroll-wrapper">
+        <div class="w3-bar w3-black">
+            <a href="Home.html" class="w3-bar-item w3-button">Home</a>
+            <a href="FAQ.html" class="w3-bar-item w3-button">FAQ</a>
+            <a href="login.html" class="w3-bar-item w3-button w3-right w3-purple" id="loginNav">Login/Signup</a>
+            <span id="usernameDisplay" class="w3-bar-item w3-button w3-right" style="display:none;"></span>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Category</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="FPScat.html" class="w3-bar-item w3-button">FPS</a>
+                    <a href="Actioncat.html" class="w3-bar-item w3-button">Action</a>
+                    <a href="Horrorcat.html" class="w3-bar-item w3-button">Horror</a>
+                    <a href="RPGcat.html" class="w3-bar-item w3-button">RPG</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-Up Form -->
+    <div class="body_outside">
+        <div class="login-box">
+            <div class="login-header">
+                <header>Sign Up</header>
+            </div>
+            <!-- Username Input -->
+            <div class="input-box">
+                <input type="text" id="username" class="input-field" placeholder="Username" required>
+            </div>
+            <!-- Email Input -->
+            <div class="input-box">
+                <input type="text" type="email" id="email" class="input-field" placeholder="Email" autocomplete="off" required>
+            </div>
+            <!-- Password Input -->
+            <div class="input-box">
+                <input type="password" type="password" id="password" class="input-field" placeholder="Password" required>
+            </div>
+            <!-- Confirm Password Input -->
+            <div class="input-box">
+                <input type="password" type="password" id="confirm-password" class="input-field" placeholder="Confirm Password" required>
+            </div>
+            <!-- Terms of Service Checkbox -->
+            <div class="checkbox-wrapper" style="margin-left: 20px;">
+                <input type="checkbox" id="remember" required>
+                <label for="remember">Do you accept <a href="terms-of-service.html">ToS (Terms Of Service)</a></label>
+            </div>
+            <!-- Sign Up Button -->
+            <div class="input-submit" style="margin-top: 20px;">
+                <button style="color:white;" class="submit-btn" id="signup-btn">Sign Up</button>
+            </div>
+            <!-- Link to Login Page -->
+            <div class="sign-up-link">
+                <p style="color: black;">Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="w3-container w3-black w3-padding-16 w3-center">
+        <p>&copy; 2025 Zyra. All rights reserved.</p>
+        <a href="Home.html" class="w3-button w3-small w3-margin-right">Home</a>
+        <a href="FAQ.html" class="w3-button w3-small w3-margin-right">FAQ</a>
+        <a href="Contact.html" class="w3-button w3-small">Contact us</a>
+        <a href="About.html" class="w3-button w3-small">About us</a>
+        <a href="terms-of-service.html" class="w3-button w3-small">ToS</a>
+    </footer>
+
+    <!-- JS File for Sign Up Logic -->
+    <script src="../js/sign-up.js"></script>
+</body>
+</html>
